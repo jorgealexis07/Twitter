@@ -1,5 +1,5 @@
 class User {
-    constructor(id, username, name, bio, dateCreated, lastUpdated){
+    constructor(id, username, name, bio){
         this.id = id,
         this.username = username,
         this.name = name,
@@ -31,6 +31,8 @@ class User {
     set setBio(newBio){
         this.bio = newBio
     }
+
+
 
 }
 
