@@ -4,7 +4,6 @@ describe("Unit Test for User class", () => {
     test('Create an User object', () => {
         //Aqui invocas el codigo que vas a usar en tu app
         const user = new User(1, "jorgealexis", "Alexis", "Bio")
-
         //Aqui validas los resultados de ese codigo.
         //Esta es una comparacion que va igualar el valor de la izquierda con el valor de la derecha (valor esperado)
         expect(user.id).toBe(1)
@@ -13,5 +12,16 @@ describe("Unit Test for User class", () => {
         expect(user.bio).toBe("Bio")
         expect(user.dateCreated).not.toBeUndefined()
         expect(user.lastUpdated).not.toBeUndefined()
+    } )
+
+    test('Add getters', () => {
+        //Aqui invocas el codigo que vas a usar en tu app
+        const user = new User(1, "jorgealexis", "Alexis", "Bio")
+        //Aqui validas los resultados de ese codigo.
+        //Esta es una comparacion que va igualar el valor de la izquierda con el valor de la derecha (valor esperado)
+        expect(user.getUsername).toBe("jorgealexis")
+        expect(user.getBio).toBe("Bio")
+        expect(user.getDateCreated).not.toBeUndefined()
+        expect(user.getLastUpdated).not.toBeUndefined()
     } )
 })
