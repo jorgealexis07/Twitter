@@ -29,9 +29,9 @@ describe("Unit Test for User class", () => {
         //Aqui invocas el codigo que vas a usar en tu app
         const user = new User(1, "jorgealexis", "Alexis", "Bio")
         user.setUsername = "jorgealexis"
-        expect(user.username.toBe("jorgealexis"),
+        expect(user.username).toBe("jorgealexis")
         
-        user.setBio = "New Bio",
+        user.setBio = "New Bio"
         expect(user.bio).toBe("New Bio")
         
     } )
